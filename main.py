@@ -26,7 +26,7 @@ def generate_data(page):
     return data
 
 
-class DataBase:
+class Database:
 
     def __init__(self, jokes_number=0):
         self.jokes_number = jokes_number
@@ -83,7 +83,7 @@ class DataBase:
 
 if __name__ == '__main__':
     n = int(input())
-    d = DataBase(n)
+    d = Database(n)
     d.select_all_sequences()
     d.delete_all_history()
 
